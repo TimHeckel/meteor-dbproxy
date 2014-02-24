@@ -58,8 +58,8 @@ Remember, however, that the client collections may be empty if you do not publis
 
 ###A couple notes: 
 
-    - The `name` is an optional param when passing in the collections. If this is omitted, the db will be used instead.
-    - The `oplogUrl` is optional
-    - The `bindables` lets you specify what operations you want to run against the proxy; for a complete list, check out [the source here](https://github.com/meteor/meteor/blob/ff7c35c5a3781bce67c4c0a6c2f69b1cf717ad82/packages/mongo-livedata/remote_collection_driver.js#L11)
+- The `name` is an optional param when passing in the collections. If this is omitted, the db will be used instead.
+- The `oplogUrl` is optional
+- The `bindables` lets you specify what operations you want to run against the proxy; for a complete list, check out [the source here](https://github.com/meteor/meteor/blob/ff7c35c5a3781bce67c4c0a6c2f69b1cf717ad82/packages/mongo-livedata/remote_collection_driver.js#L11)
 
 Thanks to [Matt Debergalis](https://github.com/debergalis) for filling me in on this pattern.
