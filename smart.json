@@ -1,0 +1,8 @@
+{
+    "name": "dbproxy",
+    "description": "A wrapper for proxying reactive data to your Meteor application (as if you had multiple MONGO_URLs)",
+    "homepage": "https://github.com/TimHeckel/meteor-dbproxy",
+    "author": "Tim Heckel  (http://timheckel.com)",
+    "version": "0.0.1",
+    "git": "https://github.com/TimHeckel/meteor-dbproxy.git"
+}
