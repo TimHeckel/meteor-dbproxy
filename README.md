@@ -21,6 +21,7 @@ Put this in your `/lib` folder (e.g., `/lib/proxyDb.js`).
 			collections: [
 				{ db: "collectionNameInMongo", name: "CollectionNameInMeteor" }
 			]
+			, bindables: ["find", "findOne"] //these are the defaults, and you do not have to specify them here...for more options see the note below
 		};
 
 		//when this runs on the server, you must provide the MONGO_URL to the proxy database
@@ -60,6 +61,6 @@ Remember, however, that the client collections may be empty if you do not publis
 
 - The `name` is an optional param when passing in the collections. If this is omitted, the db will be used instead.
 - The `oplogUrl` is optional
-- The `bindables` lets you specify what operations you want to run against the proxy; for a complete list, check out [the source here](https://github.com/meteor/meteor/blob/ff7c35c5a3781bce67c4c0a6c2f69b1cf717ad82/packages/mongo-livedata/remote_collection_driver.js#L11)
+- The `bindables` option lets you specify what operations you want to run against the proxy; for a complete list, check out [the source here](https://github.com/meteor/meteor/blob/ff7c35c5a3781bce67c4c0a6c2f69b1cf717ad82/packages/mongo-livedata/remote_collection_driver.js#L11)
 
 Thanks to [Matt Debergalis](https://github.com/debergalis) for filling me in on this pattern.
