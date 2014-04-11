@@ -10,7 +10,7 @@ MeteorDBProxy = function(opts) {
 		bindables: ["find", "findOne"]
 	};
 
-	_.extend(_opts, opts);
+	_.extend(opts, _opts);
 
 	function _init() {
 		if (Meteor.isServer) {
