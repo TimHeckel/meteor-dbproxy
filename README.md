@@ -21,7 +21,7 @@ Put this in your `/lib` folder (e.g., `/lib/proxyDb.js`).
 			collections: [
 				{ db: "collectionNameInMongo", name: "CollectionNameInMeteor" }
 			]
-			, bindables: ["find", "findOne"] //these are the defaults, and you do not have to specify them here...for more options see the note below
+			, bindables: ["find", "findOne"] //specify all the operators you want to bind
 		};
 
 		//when this runs on the server, you must provide the MONGO_URL to the proxy database

@@ -6,12 +6,6 @@ MeteorDBProxy = function(opts) {
 	//collection name
 	//[{ db: "dbCollectionName", name: "MeteorCollectionName" }]
 
-	var _opts = {
-		bindables: ["find", "findOne"]
-	};
-
-	_.extend(opts, _opts);
-
 	function _init() {
 		if (Meteor.isServer) {
 			var _args = {};
